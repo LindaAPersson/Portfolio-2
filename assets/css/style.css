@@ -29,3 +29,24 @@ h1 {
     font-weight: 600;
     font-size: 3em;
 }
+
+.gaming-area {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#question-text {
+    background-color: antiquewhite;
+}
+
+.options {
+    background-color: antiquewhite;
+    padding: 5px;
+    margin: 10px;
+}
+
+#score {
+    background-color: antiquewhite;
+}
