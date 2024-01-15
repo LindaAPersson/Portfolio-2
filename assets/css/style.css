@@ -42,11 +42,11 @@ h1 {
 }
 
 .options {
-    background-color: antiquewhite;
+    background-color: rgb(215, 217, 250);
     padding: 5px;
     margin: 10px;
 }
 
-#score {
+.score {
     background-color: antiquewhite;
 }
