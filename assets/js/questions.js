@@ -1,52 +1,52 @@
 let questions = [{
         numb: 1,
         question: "What color are bananas?",
-        answer: "A. Yellow",
-        options: ['A. Yellow','B. Blue','C. Green', 'D. Pink']
+        answer: [
+            {'Yellow' correct: true},
+            {'Blue' correct: false},
+            {'Green' correct: false}, 
+            {'Pink' correct: false}
+        ]
     },
     {
         numb: 2,
         question: "What color are tomatoes?",
-        answer: "B. Red",
-        options: [
-            'A. Black',
-            'B. Red',
-            'C. Grey',
-            'D. Brown',
-        ]
+        answer: [
+                {'Grey' correct: false},
+                {'Black' correct: false},
+                {'Brown' correct: false}, 
+                {'Red' correct: true}
+            ]
+            
     },
     {
         numb: 3,
         question: "What color is milk?",
-        answer: "D. White",
-        options: [
-            'A. Green',
-            'B. Brown',
-            'C. Orange',
-            'D. White',
+        answer: [
+                {'Orange' correct: false},
+                {'Brown' correct: false},
+                {'White' correct: true}, 
+                {'Green' correct: false}
         ]
     },
     {
         numb: 4,
         question: "What color is snow?",
-        answer: "C. White",
-        options: [
-            'A. Red',
-            'B. Blue',
-            'C. White',
-            'D. Purple',
+        answer: [
+            {'Red' correct: false},
+            {'Blue' correct: false},
+            {'White' correct: true}, 
+            {'Purple' correct: false}
         ]
     },
     {
         numb: 5,
         question: "What color are oranges?",
-        answer: "B. Orange",
-        options: [
-            'A. Yellow',
-            'B. Orange',
-            'C. Black',
-            'D. Pink',
+        answer: [
+            {'Yellow' correct: false},
+            {'Orange' correct: true},
+            {'Black' correct: false}, 
+            {'Pink' correct: false}
         ]
     }
-
 ];
