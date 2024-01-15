@@ -2,20 +2,20 @@ let questions = [{
         numb: 1,
         question: "What color are bananas?",
         answer: [
-            {'Yellow' correct: true},
-            {'Blue' correct: false},
-            {'Green' correct: false}, 
-            {'Pink' correct: false}
+            { text: 'Yellow', correct: true},
+            { text: 'Blue', correct: false},
+            { text: 'Green', correct: false}, 
+            { text: 'Pink', correct: false}
         ]
     },
     {
         numb: 2,
         question: "What color are tomatoes?",
         answer: [
-                {'Grey' correct: false},
-                {'Black' correct: false},
-                {'Brown' correct: false}, 
-                {'Red' correct: true}
+                { text: 'Grey', correct: false},
+                { text: 'Black', correct: false},
+                { text: 'Brown', correct: false}, 
+                { text: 'Red', correct: true}
             ]
             
     },
@@ -23,30 +23,30 @@ let questions = [{
         numb: 3,
         question: "What color is milk?",
         answer: [
-                {'Orange' correct: false},
-                {'Brown' correct: false},
-                {'White' correct: true}, 
-                {'Green' correct: false}
+                { text: 'Orange', correct: false},
+                { text: 'Brown', correct: false},
+                { text: 'White', correct: true}, 
+                {text: 'Green', correct: false}
         ]
     },
     {
         numb: 4,
         question: "What color is snow?",
         answer: [
-            {'Red' correct: false},
-            {'Blue' correct: false},
-            {'White' correct: true}, 
-            {'Purple' correct: false}
+            { text: 'Red', correct: false},
+            { text: 'Blue', correct: false},
+            { text: 'White', correct: true}, 
+            { text: 'Purple', correct: false}
         ]
     },
     {
         numb: 5,
         question: "What color are oranges?",
         answer: [
-            {'Yellow' correct: false},
-            {'Orange' correct: true},
-            {'Black' correct: false}, 
-            {'Pink' correct: false}
+            { text: 'Yellow' correct: false},
+            { text: 'Orange' correct: true},
+            { text: 'Black' correct: false}, 
+            { text: 'Pink' correct: false}
         ]
     }
 ];
