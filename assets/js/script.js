@@ -65,6 +65,7 @@ let shuffledQuestions, currentQuestionIndex
 currentQuestionIndex++
 
 let score = 0;
+let questionNumber = 0;
 
 startButton.addEventListener('click', startQuiz)
 
@@ -74,13 +75,14 @@ function startQuiz(){
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     score = 0;
+    questionNumber = 0;
     showQuestion();
 }
 
 function showQuestion(question) {
     clearGameArea()
     let currentQuestion = questions[currentQuestionIndex];
-    questionText.innerText = `${currentQuestion.numb}. ${currentQuestion.question}`;
+    questionText.innerText = `${questionNumber}. ${currentQuestion.question}`;
 
     currentQuestion.answer.forEach(answer => {
         let button = document.createElement('button');
@@ -116,7 +118,7 @@ function selectAnswer(e){
         }
         button.disabled = true;
     });
-    
+    questionNumber++;
 }
 
 function showScore() {
@@ -143,6 +145,6 @@ nextButton.addEventListener('click', ()=>{
 })
 
 
-questionCount.innerText = `${i++} out of ${questions.length}!`;
+questionCount.innerText = `${questionNumber} out of ${questions.length}!`;
 
 startQuiz();
