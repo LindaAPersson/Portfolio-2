@@ -76,12 +76,12 @@ function startQuiz(){
 function showQuestion(question) {
     resetState()
     let currentQuestion = questions[currentQuestionIndex];
-    questionText.innerText = currentQuestion.question;
+    questionText.innerText = `${currentQuestion.numb}. ${currentQuestion.question}`;
 
     currentQuestion.answer.forEach(answer => {
         const button = document.createElement('button');
         button.innerHTML = answer.text;
-        button.classList.add('btn');
+        button.classList.add('options');
         answerOptions.appendChild(button);
         if(answer.correct){
             button.dataset.correct= answer.correct;
@@ -98,13 +98,13 @@ function resetState(){
 }
 
 function selectAnswer(e){
-    const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.correct === 'true';
+    let selectedOptions = e.target;
+    let isCorrect = selectedOptions.dataset.correct === 'true';
     if(isCorrect){
-        selectedBtn.classList.add('correct');
+        selectedOptions.classList.add('correct');
         score++;
     } else {
-        selectedBtn.classList.add('incorrect');
+        selectedOptions.classList.add('wrong');
     }
     Array.from(answerOptions.children).forEach(button => {
         if(button.dataset.correct === 'true'){

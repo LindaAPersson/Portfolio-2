@@ -31,6 +31,10 @@ h1 {
     font-size: 3em;
 }
 
+.hide {
+    display: none;
+  }
+
 #start-btn {
     width: 100px;
     padding: 10px;
@@ -90,7 +94,15 @@ h1 {
     color: white;
 }
 
-#next {
+.correct {
+    border: 6px solid #206520;
+}
+
+.wrong {
+    border: 6px solid #800404;
+}
+
+#next-btn {
     width: 100px;
     padding: 10px;
     background: antiquewhite;
@@ -102,7 +114,7 @@ h1 {
     font-size: 16px;
 }
 
-#next:hover {
+#next-btn:hover {
     background: #795548;
     color: white;
 }
@@ -122,6 +134,3 @@ h1 {
     font-size: 16px;
 }
 
-.hide {
-    display: none;
-  }
