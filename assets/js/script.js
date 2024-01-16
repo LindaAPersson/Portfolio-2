@@ -69,14 +69,11 @@ let score = 0;
 let questionNumber = 0;
 
 startButton.onclick = () => {
-    startButton.classList.add('hide');
     startingBox.classList.add('hide');
     startQuiz();
 }
 
 function startQuiz(){
-    console.log('startbutton clicked')
-    //startButton.classList.add('hide');
     nextButton.textContent = 'Next';
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
