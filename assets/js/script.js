@@ -58,12 +58,15 @@ let answerOptions = document.getElementById('answer-options');
 let nextButton = document.getElementById('next-btn');
 let startButton = document.getElementById('start-btn');
 
+let shuffledQuestions, currentQuestionIndex
 let currentQuestionIndex = 0;
 let score = 0;
 
 startButton.addEventListener('click', startQuiz)
 
 function startQuiz(){
+    startButton.classList.add('hide')
+    shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = 'Next';

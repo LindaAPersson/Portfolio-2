@@ -38,6 +38,9 @@ h1 {
     display: flex;
     justify-content: center;
     margin-left: 10px;
+    border: 2px solid #795548;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .gaming-area {
@@ -52,8 +55,11 @@ h1 {
     width: 40vw;
     height: 60px;
     margin: 10px;
-    border: 2px solid rosybrown;
+    border: 2px solid #795548;
     background-color: antiquewhite;
+    font-family: 'popins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;   
@@ -66,9 +72,18 @@ h1 {
     align-items: center;
     width: 40vw;
     background-color: antiquewhite;
+    color: black;
+    font-family: 'popins', sans-serif;
+    font-weight:400;
+    font-size: 16px;
     padding: 20px;
     margin: 10px;
-    border: 2px solid rosybrown;
+    border: 2px solid #795548;
+    cursor: pointer;
+}
+.options:hover {
+    background: #795548;
+    color: white;
 }
 
 #next {
@@ -78,6 +93,9 @@ h1 {
     display: flex;
     justify-content: center;
     margin-left: 10px;
+    border: 2px solid #795548;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 #score {
@@ -89,5 +107,12 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid rosybrown;
+    border: 2px solid #795548;
+    font-family: 'popins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
 }
+
+.hide {
+    display: none;
+  }
