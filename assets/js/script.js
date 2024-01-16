@@ -58,10 +58,15 @@ let questionText = document.getElementById('question-text');
 let answerOptions = document.getElementById('answer-options');
 let nextButton = document.getElementById('next-btn');
 let startButton = document.getElementById('start-btn');
+let questionCount = document.getElementById('question-count');
+let scoreCount = document.getElementById('score-count');
+
 
 let shuffledQuestions, currentQuestionIndex
 currentQuestionIndex++
+
 let score = 0;
+
 
 startButton.addEventListener('click', startQuiz)
 
@@ -79,7 +84,7 @@ function showQuestion(question) {
     questionText.innerText = `${currentQuestion.numb}. ${currentQuestion.question}`;
 
     currentQuestion.answer.forEach(answer => {
-        const button = document.createElement('button');
+        let button = document.createElement('button');
         button.innerHTML = answer.text;
         button.classList.add('options');
         answerOptions.appendChild(button);
@@ -137,5 +142,8 @@ nextButton.addEventListener('click', ()=>{
         startQuiz();
     }
 })
+
+scoreCount.innerText = `${score}`;
+questionCount.innerText = `out of ${questions.length}!`;
 
 startQuiz();
