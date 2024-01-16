@@ -56,9 +56,12 @@ let questions = [{
 let questionText = document.getElementById('question-text');
 let answerOptions = document.getElementById('answer-options');
 let nextButton = document.getElementById('next-btn');
+let startButton = document.getElementById('start-btn');
 
 let currentQuestionIndex = 0;
 let score = 0;
+
+startButton.addEventListener('click', startQuiz)
 
 function startQuiz(){
     currentQuestionIndex = 0;
@@ -71,8 +74,7 @@ function showQuestion() {
     resetState()
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
-    questionText.innerHTML = questionNo + '.' + currentQuestion.
-    question;
+    questionText.innerHTML = questionNo + '.' + currentQuestion.question;
 
     currentQuestion.answer.forEach(answer => {
         const button = document.createElement('button');
@@ -87,7 +89,7 @@ function showQuestion() {
 }
 
 function resetState(){
-    nextButton.style.displey'none';
+    nextButton.style.display'none';
     while(answerOptions.firstChild){
         answerOptions.removeChild(answerOptions.firstChild);
     }

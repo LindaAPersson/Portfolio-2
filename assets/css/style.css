@@ -31,31 +31,63 @@ h1 {
     font-size: 3em;
 }
 
+#start-btn {
+    width: 100px;
+    padding: 10px;
+    background: antiquewhite;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
 .gaming-area {
     display: flex;
     flex-direction: column;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 #question-text {
     width: 40vw;
+    height: 60px;
+    margin: 10px;
+    border: 2px solid rosybrown;
     background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
 }
 
 .options{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 40vw;
     background-color: antiquewhite;
-    padding: 5px;
+    padding: 20px;
     margin: 10px;
+    border: 2px solid rosybrown;
 }
 
-#answer-options
+#next {
+    width: 100px;
+    padding: 10px;
+    background: antiquewhite;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
 
 #score {
     width: 40vw;
     height: 30px;
+    margin: 10px;
+    padding: 20px;
     background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rosybrown;
 }
