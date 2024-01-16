@@ -71,7 +71,8 @@ let score = 0;
 startButton.addEventListener('click', startQuiz)
 
 function startQuiz(){
-    startButton.classList.add('hide')
+    startButton.classList.add('hide');
+    nextButton.textContent = 'Next';
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     score = 0;
@@ -108,6 +109,7 @@ function selectAnswer(e){
     if(isCorrect){
         selectedOptions.classList.add('correct');
         score++;
+        scoreCount.innerText = `Score: ${score}`;
     } else {
         selectedOptions.classList.add('wrong');
     }
@@ -117,7 +119,7 @@ function selectAnswer(e){
         }
         button.disabled = true;
     });
-    nextButton.style.display = 'block';
+    
 }
 
 function showScore() {
@@ -143,7 +145,7 @@ nextButton.addEventListener('click', ()=>{
     }
 })
 
-scoreCount.innerText = `${score}`;
+
 questionCount.innerText = `out of ${questions.length}!`;
 
 startQuiz();
