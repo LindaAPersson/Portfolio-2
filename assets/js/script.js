@@ -59,7 +59,6 @@ let nextButton = document.getElementById('next-btn');
 let startButton = document.getElementById('start-btn');
 
 let shuffledQuestions, currentQuestionIndex
-let currentQuestionIndex = 0;
 let score = 0;
 
 startButton.addEventListener('click', startQuiz)
@@ -69,7 +68,6 @@ function startQuiz(){
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0;
     score = 0;
-    nextButton.innerHTML = 'Next';
     showQuestion();
 }
 
@@ -92,7 +90,7 @@ function showQuestion() {
 }
 
 function resetState(){
-    nextButton.style.display'none';
+    nextButton.classList.add('hide');
     while(answerOptions.firstChild){
         answerOptions.removeChild(answerOptions.firstChild);
     }
@@ -132,7 +130,7 @@ function handleNextButton(){
 }
 
 nextButton.addEventListener('click', ()=>{
-    if currentQuestionIndex < questions.length){
+    if (currentQuestionIndex < questions.length){
         handleNextButton();
     } else {
         startQuiz();

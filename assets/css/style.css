@@ -42,6 +42,10 @@ h1 {
     cursor: pointer;
     font-size: 16px;
 }
+#start-btn:hover {
+    background: #795548;
+    color: white;
+}
 
 .gaming-area {
     display: flex;
@@ -96,6 +100,11 @@ h1 {
     border: 2px solid #795548;
     cursor: pointer;
     font-size: 16px;
+}
+
+#next:hover {
+    background: #795548;
+    color: white;
 }
 
 #score {
