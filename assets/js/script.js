@@ -75,7 +75,8 @@ function startQuiz(){
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     score = 0;
-    questionNumber = 0;
+    questionNumber = 1;
+    
     showQuestion();
 }
 
@@ -94,6 +95,7 @@ function showQuestion(question) {
         }
         button.addEventListener('click', selectAnswer)
     });
+    questionCount.innerText = `${questionNumber} out of ${questions.length}!`;
 }
 
 function clearGameArea(){
@@ -145,6 +147,6 @@ nextButton.addEventListener('click', ()=>{
 })
 
 
-questionCount.innerText = `${questionNumber} out of ${questions.length}!`;
+
 
 startQuiz();
