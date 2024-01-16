@@ -1,3 +1,4 @@
+
 // questions 
 let questions = [{
     numb: 1,
@@ -59,6 +60,7 @@ let nextButton = document.getElementById('next-btn');
 let startButton = document.getElementById('start-btn');
 
 let shuffledQuestions, currentQuestionIndex
+currentQuestionIndex++
 let score = 0;
 
 startButton.addEventListener('click', startQuiz)
@@ -66,16 +68,15 @@ startButton.addEventListener('click', startQuiz)
 function startQuiz(){
     startButton.classList.add('hide')
     shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0;
+    currentQuestionIndex = 0
     score = 0;
     showQuestion();
 }
 
-function showQuestion() {
+function showQuestion(question) {
     resetState()
     let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    questionText.innerHTML = questionNo + '.' + currentQuestion.question;
+    questionText.innerText = currentQuestion.question;
 
     currentQuestion.answer.forEach(answer => {
         const button = document.createElement('button');
