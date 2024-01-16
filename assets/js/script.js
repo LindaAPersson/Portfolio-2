@@ -61,12 +61,10 @@ let startButton = document.getElementById('start-btn');
 let questionCount = document.getElementById('question-count');
 let scoreCount = document.getElementById('score-count');
 
-
 let shuffledQuestions, currentQuestionIndex
 currentQuestionIndex++
 
 let score = 0;
-
 
 startButton.addEventListener('click', startQuiz)
 
@@ -80,13 +78,13 @@ function startQuiz(){
 }
 
 function showQuestion(question) {
-    resetState()
+    clearGameArea()
     let currentQuestion = questions[currentQuestionIndex];
     questionText.innerText = `${currentQuestion.numb}. ${currentQuestion.question}`;
 
     currentQuestion.answer.forEach(answer => {
         let button = document.createElement('button');
-        button.innerHTML = answer.text;
+        button.innerText = answer.text;
         button.classList.add('options');
         answerOptions.appendChild(button);
         if(answer.correct){
@@ -96,8 +94,7 @@ function showQuestion(question) {
     });
 }
 
-function resetState(){
-    nextButton.classList.add('hide');
+function clearGameArea(){
     while(answerOptions.firstChild){
         answerOptions.removeChild(answerOptions.firstChild);
     }
@@ -123,9 +120,9 @@ function selectAnswer(e){
 }
 
 function showScore() {
-    resetState();
-    questionText.innerHTML = `You scored ${score} out of ${questions.length}!`;
-    nextButton.innerHTML= 'Play again';
+    clearGameArea();
+    questionText.innerText = `You scored ${score} out of ${questions.length}!`;
+    nextButton.innerText= 'Play again';
 }
 
 function handleNextButton(){
