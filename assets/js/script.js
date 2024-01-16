@@ -60,6 +60,7 @@ let nextButton = document.getElementById('next-btn');
 let startButton = document.getElementById('start-btn');
 let questionCount = document.getElementById('question-count');
 let scoreCount = document.getElementById('score-count');
+let startingBox = document.getElementById('startingBox');
 
 let shuffledQuestions, currentQuestionIndex
 currentQuestionIndex++
@@ -67,10 +68,15 @@ currentQuestionIndex++
 let score = 0;
 let questionNumber = 0;
 
-startButton.addEventListener('click', startQuiz)
+startButton.onclick = () => {
+    startButton.classList.add('hide');
+    startingBox.classList.add('hide');
+    startQuiz();
+}
 
 function startQuiz(){
-    startButton.classList.add('hide');
+    console.log('startbutton clicked')
+    //startButton.classList.add('hide');
     nextButton.textContent = 'Next';
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
