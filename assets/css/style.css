@@ -41,6 +41,7 @@ h1 {
     border: 2px solid #795548;
     cursor: pointer;
     font-size: 16px;
+    
 }
 #start-btn:hover {
     background: #795548;
@@ -57,7 +58,7 @@ h1 {
 
 #question-text {
     width: 40vw;
-    height: 60px;
+    height: 100px;
     margin: 10px;
     border: 2px solid #795548;
     background-color: antiquewhite;
@@ -80,7 +81,7 @@ h1 {
     font-family: 'popins', sans-serif;
     font-weight:400;
     font-size: 16px;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
     border: 2px solid #795548;
     cursor: pointer;
@@ -104,7 +105,7 @@ h1 {
     background: antiquewhite;
     display: flex;
     justify-content: center;
-    margin-left: 10px;
+    margin: 15px;
     border: 2px solid #795548;
     cursor: pointer;
     font-size: 16px;
@@ -117,7 +118,7 @@ h1 {
 
 #score {
     width: 40vw;
-    height: 30px;
+    height: 50px;
     margin: 10px;
     padding: 20px;
     background-color: antiquewhite;
@@ -133,3 +134,4 @@ h1 {
 .hide {
     display: none;
   }
+

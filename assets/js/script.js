@@ -143,6 +143,6 @@ nextButton.addEventListener('click', ()=>{
 })
 
 
-questionCount.innerText = `out of ${questions.length}!`;
+questionCount.innerText = `${i++} out of ${questions.length}!`;
 
 startQuiz();
