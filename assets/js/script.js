@@ -98,7 +98,7 @@ function showQuestion(question) {
         }
         button.addEventListener('click', selectAnswer)
     });
-    questionCount.innerText = `${questionNumber} out of ${questions.length}!`;
+    questionCount.innerText = `Question ${questionNumber} out of ${questions.length}!`;
 }
 
 function clearGameArea(){
@@ -130,6 +130,7 @@ function showScore() {
     clearGameArea();
     questionText.innerText = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerText= 'Play again';
+    scoreCount.innerText = '';
 }
 
 function handleNextButton(){
