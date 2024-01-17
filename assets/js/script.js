@@ -93,7 +93,7 @@ function showQuestion(question) {
         }
         button.addEventListener('click', selectAnswer)
     });
-    questionCount.innerText = `Question ${questionNumber} out of ${questions.length}!`;
+    questionCount.innerText = `Question: ${questionNumber} out of ${questions.length}!`;
 }
 
 function clearGameArea(){
