@@ -68,6 +68,9 @@ startButton.onclick = () => {
     startQuiz();
 }
 
+/** This function will start the quiz by generate the questions in a random order. 
+ * Set the question index, score, question number to their start value.  
+ */
 function startQuiz() {
     nextButton.textContent = 'Next';
     shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -78,6 +81,12 @@ function startQuiz() {
     showQuestion();
 }
 
+/** Gets the questions and answers from the array.
+* Displays the question and the question number.
+* Creates buttons to display the answer options in.
+* Checks which answer is the right one and adds a correct class, to that answer. 
+* Shows the question count.  
+*/
 function showQuestion(question) {
     clearGameArea()
     let currentQuestion = questions[currentQuestionIndex];
@@ -96,12 +105,19 @@ function showQuestion(question) {
     questionCount.innerText = `Question: ${questionNumber} out of ${questions.length}!`;
 }
 
+/** It clears the game area by removing the first child of ‘answerOptions’, which is the buttons.
+ */
 function clearGameArea() {
     while (answerOptions.firstChild) {
         answerOptions.removeChild(answerOptions.firstChild);
     }
 }
 
+/** Checks the selected answer to see if it’s right, and adds classes right, wrong to be able to style with css. 
+* Makes the buttons disable after choosing an option. 
+* Score count increase if the answer is right.
+* Question number increase. 
+*/
 function selectAnswer(e) {
     let selectedOptions = e.target;
     let isCorrect = selectedOptions.dataset.correct === 'true';
@@ -121,6 +137,10 @@ function selectAnswer(e) {
     questionNumber++;
 }
 
+/** Shows the user the total score in the questionText area. 
+* Next button becomes ‘Play again’ button.
+* Score count in the score area becomes invisible. 
+*/
 function showScore() {
     clearGameArea();
     questionText.innerText = `You scored ${score} out of ${questions.length}!`;
@@ -128,6 +148,8 @@ function showScore() {
     scoreCount.innerText = '';
 }
 
+/** Makes the next question appear or if the user has done all the questions it will show the score. 
+*/
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {

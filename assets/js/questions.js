@@ -38,10 +38,10 @@ let questions = [{
 {
     question: "What color are oranges?",
     answer: [
-        { text: 'Yellow' correct: false },
-        { text: 'Orange' correct: true },
-        { text: 'Black' correct: false },
-        { text: 'Pink' correct: false }
+        { text: 'Yellow', correct: false },
+        { text: 'Orange', correct: true },
+        { text: 'Black', correct: false },
+        { text: 'Pink', correct: false }
     ]
 }
 ];
