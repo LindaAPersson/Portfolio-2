@@ -73,6 +73,7 @@ startButton.onclick = () => {
  */
 function startQuiz() {
     nextButton.textContent = 'Next';
+    nextButton.disabled = true;
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     score = 0;
@@ -131,27 +132,9 @@ function selectAnswer(e) {
         button.classList.add(isCorrectAnswer ? 'correct' : '.');
         button.disabled = true;
     });
+    nextButton.disabled = false;
     questionNumber++;
 }
-
-/*function selectAnswer(e) {
-    let selectedOptions = e.target;
-    let isCorrect = selectedOptions.dataset.correct === 'true';
-    if (isCorrect) {
-        selectedOptions.classList.add('correct');
-        score++;
-        scoreCount.innerText = `Score: ${score}`;
-    } else {
-        selectedOptions.classList.add('wrong');
-    }
-    Array.from(answerOptions.children).forEach(button => {
-        if (button.dataset.correct === 'true') {
-            button.classList.add('correct');
-        }
-        button.disabled = true;
-    });
-    questionNumber++;
-}*/
 
 /** Shows the user the total score in the questionText area. 
 * Next button becomes ‘Play again’ button.
