@@ -1,7 +1,6 @@
 
 // questions 
 let questions = [{
-    numb: 1,
     question: "What color are bananas?",
     answer: [
         { text: 'Yellow', correct: true},
@@ -11,7 +10,6 @@ let questions = [{
     ]
 },
 {
-    numb: 2,
     question: "What color are tomatoes?",
     answer: [
             { text: 'Grey', correct: false},
@@ -22,7 +20,6 @@ let questions = [{
         
 },
 {
-    numb: 3,
     question: "What color is milk?",
     answer: [
             { text: 'Orange', correct: false},
@@ -32,7 +29,6 @@ let questions = [{
     ]
 },
 {
-    numb: 4,
     question: "What color is snow?",
     answer: [
         { text: 'Red', correct: false},
@@ -42,7 +38,6 @@ let questions = [{
     ]
 },
 {
-    numb: 5,
     question: "What color are oranges?",
     answer: [
         { text: 'Yellow', correct: false},
