@@ -87,11 +87,10 @@ function startQuiz() {
 * Checks which answer is the right one and adds a correct class, to that answer. 
 * Shows the question count.  
 */
-function showQuestion(question) {
+function showQuestion() {
     clearGameArea()
     let currentQuestion = questions[currentQuestionIndex];
     questionText.innerText = `${questionNumber}. ${currentQuestion.question}`;
-
     currentQuestion.answer.forEach(answer => {
         let button = document.createElement('button');
         button.innerText = answer.text;
@@ -113,12 +112,29 @@ function clearGameArea() {
     }
 }
 
-/** Checks the selected answer to see if it’s right, and adds classes right, wrong to be able to style with css. 
+/** Checks the selected answer to see if it’s right, and adds classes right and wrong to be able to style with css. 
 * Makes the buttons disable after choosing an option. 
 * Score count increase if the answer is right.
 * Question number increase. 
 */
+
 function selectAnswer(e) {
+    let selectedOption = e.target;
+    let isCorrect = selectedOption.dataset.correct === 'true';
+    selectedOption.classList.add(isCorrect ? 'correct' : 'wrong');
+    if (isCorrect) {
+        score++;
+        scoreCount.innerText = `Score: ${score}`;
+    }
+    Array.from(answerOptions.children).forEach(button => {
+        let isCorrectAnswer = button.dataset.correct === 'true';
+        button.classList.add(isCorrectAnswer ? 'correct' : '.');
+        button.disabled = true;
+    });
+    questionNumber++;
+}
+
+/*function selectAnswer(e) {
     let selectedOptions = e.target;
     let isCorrect = selectedOptions.dataset.correct === 'true';
     if (isCorrect) {
@@ -135,7 +151,7 @@ function selectAnswer(e) {
         button.disabled = true;
     });
     questionNumber++;
-}
+}*/
 
 /** Shows the user the total score in the questionText area. 
 * Next button becomes ‘Play again’ button.
@@ -165,9 +181,4 @@ nextButton.addEventListener('click', () => {
     } else {
         startQuiz();
     }
-})
-
-
-
-
-startQuiz();
+});
