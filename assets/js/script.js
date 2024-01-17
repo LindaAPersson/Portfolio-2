@@ -3,47 +3,47 @@
 let questions = [{
     question: "What color are bananas?",
     answer: [
-        { text: 'Yellow', correct: true},
-        { text: 'Blue', correct: false},
-        { text: 'Green', correct: false}, 
-        { text: 'Pink', correct: false}
+        { text: 'Yellow', correct: true },
+        { text: 'Blue', correct: false },
+        { text: 'Green', correct: false },
+        { text: 'Pink', correct: false }
     ]
 },
 {
     question: "What color are tomatoes?",
     answer: [
-            { text: 'Grey', correct: false},
-            { text: 'Black', correct: false},
-            { text: 'Brown', correct: false}, 
-            { text: 'Red', correct: true}
-        ]
-        
+        { text: 'Grey', correct: false },
+        { text: 'Black', correct: false },
+        { text: 'Brown', correct: false },
+        { text: 'Red', correct: true }
+    ]
+
 },
 {
     question: "What color is milk?",
     answer: [
-            { text: 'Orange', correct: false},
-            { text: 'Brown', correct: false},
-            { text: 'White', correct: true}, 
-            {text: 'Green', correct: false}
+        { text: 'Orange', correct: false },
+        { text: 'Brown', correct: false },
+        { text: 'White', correct: true },
+        { text: 'Green', correct: false }
     ]
 },
 {
     question: "What color is snow?",
     answer: [
-        { text: 'Red', correct: false},
-        { text: 'Blue', correct: false},
-        { text: 'White', correct: true}, 
-        { text: 'Purple', correct: false}
+        { text: 'Red', correct: false },
+        { text: 'Blue', correct: false },
+        { text: 'White', correct: true },
+        { text: 'Purple', correct: false }
     ]
 },
 {
     question: "What color are oranges?",
     answer: [
-        { text: 'Yellow', correct: false},
-        { text: 'Orange', correct: true},
-        { text: 'Black', correct: false}, 
-        { text: 'Pink', correct: false}
+        { text: 'Yellow', correct: false },
+        { text: 'Orange', correct: true },
+        { text: 'Black', correct: false },
+        { text: 'Pink', correct: false }
     ]
 }
 ];
@@ -68,13 +68,13 @@ startButton.onclick = () => {
     startQuiz();
 }
 
-function startQuiz(){
+function startQuiz() {
     nextButton.textContent = 'Next';
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     score = 0;
     questionNumber = 1;
-    
+
     showQuestion();
 }
 
@@ -88,24 +88,24 @@ function showQuestion(question) {
         button.innerText = answer.text;
         button.classList.add('options');
         answerOptions.appendChild(button);
-        if(answer.correct){
-            button.dataset.correct= answer.correct;
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
         }
         button.addEventListener('click', selectAnswer)
     });
     questionCount.innerText = `Question: ${questionNumber} out of ${questions.length}!`;
 }
 
-function clearGameArea(){
-    while(answerOptions.firstChild){
+function clearGameArea() {
+    while (answerOptions.firstChild) {
         answerOptions.removeChild(answerOptions.firstChild);
     }
 }
 
-function selectAnswer(e){
+function selectAnswer(e) {
     let selectedOptions = e.target;
     let isCorrect = selectedOptions.dataset.correct === 'true';
-    if(isCorrect){
+    if (isCorrect) {
         selectedOptions.classList.add('correct');
         score++;
         scoreCount.innerText = `Score: ${score}`;
@@ -113,7 +113,7 @@ function selectAnswer(e){
         selectedOptions.classList.add('wrong');
     }
     Array.from(answerOptions.children).forEach(button => {
-        if(button.dataset.correct === 'true'){
+        if (button.dataset.correct === 'true') {
             button.classList.add('correct');
         }
         button.disabled = true;
@@ -124,21 +124,21 @@ function selectAnswer(e){
 function showScore() {
     clearGameArea();
     questionText.innerText = `You scored ${score} out of ${questions.length}!`;
-    nextButton.innerText= 'Play again';
+    nextButton.innerText = 'Play again';
     scoreCount.innerText = '';
 }
 
-function handleNextButton(){
+function handleNextButton() {
     currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length){
+    if (currentQuestionIndex < questions.length) {
         showQuestion()
     } else {
-    showScore();
+        showScore();
     }
 }
 
-nextButton.addEventListener('click', ()=>{
-    if (currentQuestionIndex < questions.length){
+nextButton.addEventListener('click', () => {
+    if (currentQuestionIndex < questions.length) {
         handleNextButton();
     } else {
         startQuiz();

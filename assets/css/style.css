@@ -1,18 +1,21 @@
-
 /* google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&family=Work+Sans:wght@400;500;600&display=swap');
 
+/* This takes away the browsers marging/padddning */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Style for the body - backgroundimage */
 body {
     background: url(../images/hero.jpg) no-repeat center/cover;
     height: 100vh;
 }
 
-header{
+/* Stle for the header*/
+header {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -31,6 +34,7 @@ h1 {
     font-size: 40px;
 }
 
+/* Style for the starting box and its content*/
 #startingBox {
     position: absolute;
     top: 50%;
@@ -54,37 +58,35 @@ h1 {
     font-size: 18px;
     font-weight: 500;
     margin: 10px;
-    text-align: center;
 }
 
 #start-btn {
     width: 100px;
     padding: 10px;
     background: antiquewhite;
-    display: flex;
-    justify-content: center;
     margin: 60px 0px;
     border: 2px solid #795548;
     cursor: pointer;
     font-size: 16px;
 
-    
+
 }
+
 #start-btn:hover {
     background: #795548;
     color: white;
 }
 
+/* Styles for gaming area */
 .gaming-area {
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-content: center;
     align-items: center;
-    flex-wrap: wrap;
     left: 30%;
 }
 
+/* Styles for the question text*/
 #question-text {
     width: 40vw;
     height: 100px;
@@ -96,26 +98,27 @@ h1 {
     font-size: 16px;
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
     text-align: center;
 }
 
-.options{
+/* Styles for the answer options*/
+.options {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 40vw;
     background-color: antiquewhite;
     color: black;
     font-family: 'popins', sans-serif;
-    font-weight:400;
+    font-weight: 400;
     font-size: 16px;
     padding: 10px;
     margin: 10px;
     border: 2px solid #795548;
     cursor: pointer;
 }
+
 .options:hover:hover:not([disabled]) {
     background: #795548;
     color: white;
@@ -129,12 +132,11 @@ h1 {
     border: 6px solid #800404;
 }
 
+/* Styles for the next button*/
 #next-btn {
     width: 100px;
     padding: 10px;
     background: antiquewhite;
-    display: flex;
-    justify-content: center;
     margin: 15px;
     border: 2px solid #795548;
     cursor: pointer;
@@ -146,6 +148,7 @@ h1 {
     color: white;
 }
 
+/* Styles for the score area with score count and question count*/
 #score {
     width: 40vw;
     height: 80px;
@@ -170,17 +173,19 @@ h1 {
 #question-count {
     padding: 5px;
 }
-/* Tablets */
-  @media screen and (min-width: 768px){
+
+/* Styles for tablet-size */
+@media screen and (min-width: 768px) {
     #logo {
         height: 10vw;
     }
+
     h1 {
         font-size: 50px;
     }
-  }
+}
 
-/* Laptops */
+/* Styles for laptop-size */
 @media screen and (min-width: 1200px) {
     #score {
         display: flex;
@@ -190,4 +195,4 @@ h1 {
         padding: 20px;
     }
 
-}  
+}
