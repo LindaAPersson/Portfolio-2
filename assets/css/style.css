@@ -40,10 +40,6 @@ h1 {
     font-size: 40px;
 }
 
-h2, h3 {
-    text-align: center;
-}
-
 /* Style for the starting box and its content*/
 #startingBox {
     position: absolute;
@@ -63,6 +59,11 @@ h2, h3 {
 
 #startingBox.hide {
     display: none;
+}
+
+#startingBox h2 {
+    margin: 20px;
+    text-align: center;
 }
 
 #startingBox p {
@@ -102,7 +103,7 @@ h2, h3 {
     color: white;
 }
 
-/* Style for the starting box and its content */
+/* Style for the rules box and its content */
 #rules {
     position: absolute;
     top: 50%;
@@ -125,6 +126,7 @@ h2, h3 {
 
 #rules h3 {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #rules li {
