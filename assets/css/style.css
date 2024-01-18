@@ -83,28 +83,61 @@ h1 {
     color: white;
 }
 
+#rules-btn {
+    width: 100px;
+    padding: 10px;
+    background: antiquewhite;
+    margin: 60px 0px;
+    border: 2px solid #795548;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#rules-btn:hover {
+    background: #795548;
+    color: white;
+}
+
+/* Style for the starting box and its content */
 #rules {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 50vw;
     height: 60vh;
-    background: green;
+    background: #dab58a;
     border: 2px solid #795548;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #rules.hide {
     display: none;
 }
 
+#closeRules-btn{
+    width: 100px;
+    padding: 10px;
+    background: antiquewhite;
+    margin: 60px 0px;
+    border: 2px solid #795548;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#closeRules-btn:hover {
+    background: #795548;
+    color: white;
+}
+
 /* Styles for gaming area */
 .gaming-area {
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    left: 30%;
 }
 
 /* Styles for the question text*/
