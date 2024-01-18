@@ -73,7 +73,7 @@ startButton.onclick = () => {
  */
 function startQuiz() {
     nextButton.textContent = 'Next';
-    nextButton.disabled = true;
+    
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     score = 0;
@@ -102,6 +102,7 @@ function showQuestion() {
         }
         button.addEventListener('click', selectAnswer)
     });
+    nextButton.disabled = true;
     questionCount.innerText = `Question: ${questionNumber} out of ${questions.length}!`;
 }
 
