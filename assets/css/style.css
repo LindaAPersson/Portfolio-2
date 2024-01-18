@@ -12,6 +12,12 @@
 body {
     background: url(../images/hero.jpg) no-repeat center/cover;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 /* Stle for the header*/
@@ -173,6 +179,30 @@ h1 {
 
 #question-count {
     padding: 5px;
+}
+
+/* Footer */
+footer {
+    background: rgba(218, 181, 138, 0.8);
+    border: 2px solid #795548;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#social-media{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+
+#social-media i {
+    color: #795548;
+    margin: 10px;
+    font-size: 40px;
+
 }
 
 /* Styles for tablet-size */
