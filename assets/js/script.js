@@ -56,6 +56,9 @@ let startButton = document.getElementById('start-btn');
 let questionCount = document.getElementById('question-count');
 let scoreCount = document.getElementById('score-count');
 let startingBox = document.getElementById('startingBox');
+let rulesButton = document.getElementById('rules-btn');
+let rulesBox = document.getElementById('rules');
+let closeRulesButton = document.getElementById('closeRules-btn');
 
 let shuffledQuestions, currentQuestionIndex
 currentQuestionIndex++
@@ -66,6 +69,14 @@ let questionNumber = 0;
 startButton.onclick = () => {
     startingBox.classList.add('hide');
     startQuiz();
+}
+rulesButton.onclick = () => {
+    startingBox.classList.add('hide');
+    rulesBox.classList.remove('hide');
+}
+closeRulesButton.onclick = () => {
+    startingBox.classList.remove('hide');
+    rulesBox.classList.add('hide');
 }
 
 /** This function will start the quiz by generate the questions in a random order. 

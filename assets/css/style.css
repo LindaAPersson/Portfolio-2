@@ -54,6 +54,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 #startingBox.hide {
@@ -75,13 +76,26 @@ h1 {
     border: 2px solid #795548;
     cursor: pointer;
     font-size: 16px;
-
-
 }
 
 #start-btn:hover {
     background: #795548;
     color: white;
+}
+
+#rules {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    height: 60vh;
+    background: green;
+    border: 2px solid #795548;
+    transform: translate(-50%, -50%);
+}
+
+#rules.hide {
+    display: none;
 }
 
 /* Styles for gaming area */
@@ -185,7 +199,6 @@ h1 {
 footer {
     background: rgba(218, 181, 138, 0.8);
     border: 2px solid #795548;
-    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
