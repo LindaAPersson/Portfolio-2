@@ -4,7 +4,7 @@ Quiztime is a easy to use quiz site, both for the user and if you want to make a
 The quiz displays a question and four different answer options. When the user selects an answer it clearly shows if it the right Och wrong answer. When the user has completed all the questions the total score will display in the question area. But if the user want to keep track on every point, they can easily do so at the bottom of the page. 
 If you want to adjust the questions you can easy do so, in a separate JavaScript file, that way you don’t need to be afraid to change something you shouldn’t. 
 
-Link to Quiztime XXXX
+[Link to Quiztime](https://lindaapersson.github.io/Portfolio-2/)
 
 ![Image of responsvie design](assets/readme-img/screenshot.png)
 

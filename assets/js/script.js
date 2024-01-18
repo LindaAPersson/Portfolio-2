@@ -8,6 +8,7 @@ let startingBox = document.getElementById('startingBox');
 let rulesButton = document.getElementById('rules-btn');
 let rulesBox = document.getElementById('rules');
 let closeRulesButton = document.getElementById('closeRules-btn');
+let gameArea = document.getElementById('gaming-area');
 
 let shuffledQuestions, currentQuestionIndex
 currentQuestionIndex++
@@ -17,6 +18,7 @@ let questionNumber = 0;
 
 startButton.onclick = () => {
     startingBox.classList.add('hide');
+    gameArea.classList.remove('hide');
     startQuiz();
 }
 rulesButton.onclick = () => {

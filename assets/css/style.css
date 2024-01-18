@@ -149,10 +149,14 @@ h1 {
 }
 
 /* Styles for gaming area */
-.gaming-area {
+#gaming-area {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#gaming-area.hide {
+    display: none;
 }
 
 /* Styles for the question text*/
