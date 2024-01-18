@@ -128,7 +128,7 @@ h2, h3 {
 }
 
 #rules li {
-    margin-left: 20px;
+    margin: 10px 0px 0px 20px;
 }
 
 #closeRules-btn{
@@ -279,7 +279,7 @@ footer {
     }
     
     #rules li {
-        margin: 20px;
+        margin: 20px 0px 0px 30px;
     }
     
     #closeRules-btn{
