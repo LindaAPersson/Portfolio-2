@@ -118,13 +118,14 @@ There is no unfixed bugs at the page right now, that I’m aware of.
 ## Credits
 
 ### Code
-This YouTube tutorial gave me inspiration and ideas on how I wanted Quiztime to turn out. 
-[Youtube Tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k)
+- The code for the Faveicon are from [Faveicon generator](https://realfavicongenerator.net/).
+- This YouTube tutorial gave me inspiration and ideas on how I wanted Quiztime to turn out. [Youtube Tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k)
 
 ### Media
 - The two images used are royalty free from Prixabay. You can find them here: 
 [Logo, questionmark](https://pixabay.com/sv/illustrations/fr%C3%A5getecken-alfabet-fr%C3%A5gande-font-3246711/).
 [Background image](https://pixabay.com/sv/photos/l%C3%B6v-v%C3%A4xt-torr-falla-hortensia-8390274/) .
-- The Faveicon was created through this site: [Faveicon](https://realfavicongenerator.net/).
+- The Faveicon images was created through this site: [Faveicon](https://realfavicongenerator.net/).
 - The flowchart was created with Lucidchart: [Lucischart](https://lucid.app/documents#/documents?folder_id=recent).
-
+- The social media symbols are from Fontawsome: [Fontawsome](https://fontawesome.com/).
+- The font was imported fron GoogleFonts [Google Fonts](https://fonts.google.com/).
