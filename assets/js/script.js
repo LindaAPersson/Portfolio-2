@@ -10,8 +10,8 @@ let rulesBox = document.getElementById('rules');
 let closeRulesButton = document.getElementById('closeRules-btn');
 let gameArea = document.getElementById('gaming-area');
 
-let shuffledQuestions, currentQuestionIndex
-currentQuestionIndex++
+let shuffledQuestions, currentQuestionIndex;
+currentQuestionIndex++;
 
 let score = 0;
 let questionNumber = 0;
@@ -20,15 +20,15 @@ startButton.onclick = () => {
     startingBox.classList.add('hide');
     gameArea.classList.remove('hide');
     startQuiz();
-}
+};
 rulesButton.onclick = () => {
     startingBox.classList.add('hide');
     rulesBox.classList.remove('hide');
-}
+};
 closeRulesButton.onclick = () => {
     startingBox.classList.remove('hide');
     rulesBox.classList.add('hide');
-}
+};
 
 /** This function will start the quiz by generate the questions in a random order. 
  * Set the question index, score, question number to their start value.  
@@ -36,8 +36,8 @@ closeRulesButton.onclick = () => {
 function startQuiz() {
     nextButton.textContent = 'Next';
     
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
     score = 0;
     questionNumber = 1;
 
@@ -51,7 +51,7 @@ function startQuiz() {
 * Shows the question count.  
 */
 function showQuestion() {
-    clearGameArea()
+    clearGameArea();
     let currentQuestion = questions[currentQuestionIndex];
     questionText.innerText = `${questionNumber}. ${currentQuestion.question}`;
     currentQuestion.answer.forEach(answer => {
@@ -62,7 +62,7 @@ function showQuestion() {
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
-        button.addEventListener('click', selectAnswer)
+        button.addEventListener('click', selectAnswer);
     });
     nextButton.disabled = true;
     questionCount.innerText = `Question: ${questionNumber} out of ${questions.length}!`;
@@ -115,7 +115,7 @@ function showScore() {
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
-        showQuestion()
+        showQuestion();
     } else {
         showScore();
     }
