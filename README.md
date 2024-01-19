@@ -1,8 +1,8 @@
 # Quizetime!
 
-"Quiztime is an easy-to-use quiz site, both for the user and if you want to create a quiz with a specific topic or for a particular demographic. 
+Quiztime is an easy-to-use quiz site, both for the user and if you want to create a quiz with a specific topic or for a particular demographic. 
 The quiz displays a question and four different answer options. When the user selects an answer, it clearly shows if it is the right or wrong answer. When the user has completed all the questions, the total score will display in the question area. But if the user wants to keep track of every point, they can see them at the bottom of the page.
-If you want to adjust the questions, you can easily do so in a separate JavaScript file. That way, you don’t need to be afraid to change something you shouldn’t."
+If you want to adjust the questions, you can easily do so in a separate JavaScript file. That way, you don’t need to be afraid to change something you shouldn’t.
 
 [Link to Quiztime](https://lindaapersson.github.io/Portfolio-2/)
 
@@ -118,14 +118,14 @@ There is no unfixed bugs at the page right now, that I’m aware of.
 ## Credits
 
 ### Code
-- The code for the Faveicon are from [Faveicon generator](https://realfavicongenerator.net/).
+- The code for the Faveicon are from [Faveicon generator](https://realfavicongenerator.net/)
 - This YouTube tutorial gave me inspiration and ideas on how I wanted Quiztime to turn out. [Youtube Tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k)
 
 ### Media
 - The two images used are royalty free from Prixabay. You can find them here: 
-[Logo, questionmark](https://pixabay.com/sv/illustrations/fr%C3%A5getecken-alfabet-fr%C3%A5gande-font-3246711/).
-[Background image](https://pixabay.com/sv/photos/l%C3%B6v-v%C3%A4xt-torr-falla-hortensia-8390274/) .
-- The Faveicon images was created through this site: [Faveicon](https://realfavicongenerator.net/).
-- The flowchart was created with Lucidchart: [Lucischart](https://lucid.app/documents#/documents?folder_id=recent).
-- The social media symbols are from Fontawsome: [Fontawsome](https://fontawesome.com/).
-- The font was imported fron GoogleFonts [Google Fonts](https://fonts.google.com/).
+[Logo, questionmark](https://pixabay.com/sv/illustrations/fr%C3%A5getecken-alfabet-fr%C3%A5gande-font-3246711/)
+[Background image](https://pixabay.com/sv/photos/l%C3%B6v-v%C3%A4xt-torr-falla-hortensia-8390274/) 
+- The Faveicon images was created through this site: [Faveicon](https://realfavicongenerator.net/)
+- The flowchart was created with Lucidchart: [Lucischart](https://lucid.app/documents#/documents?folder_id=recent)
+- The social media symbols are from Fontawsome: [Fontawsome](https://fontawesome.com/)
+- The font was imported fron GoogleFonts [Google Fonts](https://fonts.google.com/)
