@@ -88,7 +88,16 @@ The site was deployed early in the project using GitHub. To deploy the site, I t
 7. Scroll back down to the "Pages" section to get the link to the webpage.
 
 ## Testing
-Entering the page, the 'starting box' appears as expected, and the two buttons are clickable. The 'rules box' works as expected, and the Close Rules button is clickable and takes you back to the starting box. The quiz displays questions as expected, and the question number increases. When the answer options are shown, the Next button is disabled. The answer changes color depending on whether the right or wrong answer was selected. The score increases when the user selects the right answer. The final score is displayed in the question area when the user has completed all the questions. The Next button changes its name to 'Play Again' when the user has answered all the questions. The site is responsive
+- The site sizes down to 320px and is responsive up to 1920px.
+- Entering the page, the 'starting box' appears as expected, and the two buttons are clickable. 
+- The 'rules box' works as expected, and the Close Rules button is clickable and takes you back to the starting box. 
+- The quiz displays questions as expected, and the question number increases with every question. 
+- The questions display in a random order. 
+- When the answer options are shown, the Next button is disabled. 
+- The answer changes color depending on whether the right or wrong answer was selected. 
+- The score increases when the user selects the right answer. 
+- The final score is displayed in the question area when the user has completed all the questions. 
+- The Next button changes its name to 'Play Again' when the user has answered all the questions.
 
 ### HTML
 The HTML code was tested with W3C Validation, with no errors. 
