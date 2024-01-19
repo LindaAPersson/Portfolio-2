@@ -30,12 +30,12 @@ The main colors are beige, brown, and black. I chose those colors because they g
 ## Features
 Quiztime is a responsive and interactive site with the following features:
 
-### The Header -
+### The Header
 The header contains an image of a question mark and the logo. It clearly shows the user the name of the page.
 
 ![Screenshot of header](assets/readme-img/header.png)
 
-### The footer -
+### The footer
 The footer displays at the bottom of the page and contains three social media icons (Twitter, YouTube, and Instagram). All icons are clickable and take the user to each social media platform in a new tab.
 
 ![Screenshot of footer](assets/readme-img/footer.png)
