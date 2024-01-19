@@ -122,7 +122,7 @@ Testing the page with Lighthouse, mobile view, it got a score that has room for 
 The two JavaScript files were tested with JSHint and came back with good results but with a warning of one undefined variable/one unused variable. That is because there are two separate JavaScript files.
 
 ![Screenshot of JS Hint, script.js](assets/readme-img/jshint-script.png)
-![Screenshot of JS Hint, questions.js](assets/readme-img/jshint-script.png)
+![Screenshot of JS Hint, questions.js](assets/readme-img/jshint-questions.png)
 
 ## Buggs
 ### Debugging
