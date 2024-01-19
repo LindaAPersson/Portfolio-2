@@ -27,6 +27,8 @@ The background is just one single image. This makes it very easy to change the b
 ### Colors
 The main colors are beige, brown, and black. I chose those colors because they give a good contrast that makes it easy to read the text. And that is a very important thing while using an online quiz
 
+![Image of color selection](assets/readme-img/colors.png)
+
 ## Features
 Quiztime is a responsive and interactive site with the following features:
 
