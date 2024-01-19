@@ -21,6 +21,8 @@ I knew that I wouldn’t have the time to come up with the most original or spec
 ### Font
 I chose the font Poppins because it's easy to read but with a little twist. It works for all ages and gives a good contrast that is easy to read.
 
+![Image of poppins font](assets/readme-img/googlefonts-poppins.png)
+
 ### Background
 The background is just one single image. This makes it very easy to change the background to something that matches the questions.
 
