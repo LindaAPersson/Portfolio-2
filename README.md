@@ -131,3 +131,4 @@ There is no unfixed bugs at the page right now, that I’m aware of.
 - The flowchart was created with Lucidchart: [Lucischart](https://lucid.app/documents#/documents?folder_id=recent)
 - The social media symbols are from Fontawsome: [Fontawsome](https://fontawesome.com/)
 - The font was imported fron GoogleFonts [Google Fonts](https://fonts.google.com/)
+- Color pallet generated with Coolors [Coolors generator](https://coolors.co/)
